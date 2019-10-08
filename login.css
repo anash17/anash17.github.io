@@ -1,12 +1,13 @@
 * {box-sizing: border-box}
 
 body {
-  padding: 0;
-  margin: 0;  
-  background: url("bg.jpg");
-  background-size: 1368px 768px;
-  background-repeat: no-repeat;
-  background-position: center;
+    padding: 0;
+    margin: 0;  
+    background-image: url("bg.jpg");
+    background-size: 1366px 850px;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 h1 {
@@ -50,7 +51,12 @@ h1 {
   color: whitesmoke;
 }
 
-input[type=text], input[type=password], input[type=date], select {
+#welcome {
+	width: 50%;
+	margin: 10% 0 0 50%;
+}
+
+input[type=text], input[type=password]{
   width: 100%;
   padding: 15px;
   margin: 5px 0 10px 0;
