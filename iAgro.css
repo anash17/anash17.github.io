@@ -1,0 +1,176 @@
+body{
+    background: green;
+    font-family: sans-serif;
+    width: 100%; 
+    margin: 0;   
+    }
+html,body{
+    height: 100%;
+    background: linear-gradient(darkgreen,green, khaki);
+
+}
+
+.header{
+    background: linear-gradient(green, darkgreen,   darkgreen);
+    height: 150px;
+    margin: 0px;
+}
+
+.logo{
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 265px;
+    float: left;
+}
+.logo img{
+    width: 250px;
+    height: auto;
+}
+
+.menu{
+    font-weight: bold;
+    float: right;
+    width: 650px;
+    padding-left: 50px;
+}
+
+.menu ul li {
+    float: left;
+    list-style: none;
+    min-width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 30px 0px 0px 0px;
+}
+
+.menu ul li a {
+    display: block;
+    text-align: center;
+    border-radius: 2px;
+    letter-spacing: -0.2px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 5px 8px;
+}
+
+.menu ul li a:hover {
+    background: forestgreen;
+}
+
+.menu a.button {
+    color: black;
+    border: 1px solid white;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.menu a.button:hover {
+    background-color: wheat;
+    color: black;
+    border-color: wheat;
+}
+
+@media (min-width:801px) and (max-width:1000px){
+    .header{
+        height: 230px;
+        width: 100%;
+    }
+    
+    .logo{
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .logo img{
+        width: 250px;
+    }
+    
+    .menu{
+        width: 100%;
+    }
+
+    .menu ul{
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    .menu ul li {
+        min-width: 140px;
+    }
+    
+}
+
+@media (min-width:500px) and (max-width:800px){
+
+    
+    .header{
+        height: 170px;
+        width: 100%;
+    }
+    
+    .logo{
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .logo img{
+        width: 170px;
+    }
+    
+    .menu{
+        width: 100%;
+    }
+
+    .menu ul{
+        width: 450px;
+        margin: 0 auto;
+    }
+    
+    .menu ul li {
+        min-width: 100px;
+    }
+    
+    .menu ul li a{
+        padding: 1px 6px;
+        font-size: 15px;
+    }
+    
+    
+}
+
+@media (max-width:499px){
+    .header{
+        height: 170px;
+        width: 100%;
+    }
+    
+    .logo{
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+    
+    .menu{
+        width: 100%;
+    }
+
+    .menu ul{
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .menu ul li {
+        min-width: 40px;   
+    }
+    
+    .menu ul li a{
+        padding: 0px 3px;
+        font-size: 10px;
+    }
+}

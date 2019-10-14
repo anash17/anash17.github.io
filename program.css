@@ -1,0 +1,138 @@
+
+.isi{
+    height: 456px;
+    
+}
+
+.img3{
+    bottom: 0;
+    left: 0; 
+    position: absolute;
+    width: 350px;
+    opacity: 0.6;
+}
+
+.kanan1{
+    width: 50%;
+    float: right;
+}
+
+.kanan1 p{
+    position: relative;
+    z-index: 100;
+    margin: 10% 5%;
+    padding: 15px;
+    background: rgba(169, 169, 169, 0.5);
+    border-radius: 22px;
+    width: auto;
+    font-family: sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+
+.kiri1{
+    width: 50%;
+    float: left;
+
+}
+.kiri1 h2{
+    margin: 10%;
+    padding: 1%;
+    color: white;
+    font-size: 50px;
+}
+
+.button-proker a{
+    text-decoration: none;
+    color: white;
+    background-color: lawngreen;
+    padding: 5px 30px 5px 0;
+    margin-left: 30px;
+    border-radius: 10px;   
+}
+.button-proker a img{
+    width: 25px;
+    height: auto;
+    position: relative;
+    margin-right: 10px;
+    
+}
+
+@media (min-width:801px) and (max-width:1000px){
+    .img3{
+        width: 300px;
+    }
+
+    .kanan1{
+        width: 60%;
+        
+    }
+    .kiri1{
+        width: 40%;
+
+    }
+}
+
+@media (min-width:500px) and (max-width:800px){
+    .img3{
+        width:200px;
+    } 
+    
+    .kanan1{
+        width: 100%;
+        float: left;
+    }
+    
+    .kiri1{
+        width: 100%;
+        float: right;
+    }
+
+    .kanan1 p{
+        margin: 5% 5% 0% 5%;
+        padding: 3%;
+    }
+
+    .kiri1 h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 4% auto 0 auto;
+        padding: 1%;
+        color: white;
+    }
+}
+
+@media (max-width:499px){    
+    .img3{
+        width:100px;
+    }
+
+    .kanan1{
+        width: 100%;
+        float: left;
+    }
+    .kiri1{
+        width: 100%;
+        float: right;
+    }
+
+    .kanan1 p{
+        margin: 5% 5% 0% 5%;
+        padding: 3%;
+    }
+
+    .kiri1 h2{
+        font-size: 25px;
+        text-align: center;
+        margin: 4% auto 0 auto;
+        padding: 1%;
+        color: white;
+    }
+
+   
+    .kanan1 p{
+        font-size: 12px;
+    }
+    
+}
