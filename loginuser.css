@@ -1,0 +1,17 @@
+.user .admin , .user .pengguna{
+    width: 40%;
+    font-family: sans-serif;
+    margin: 4%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;;
+  }
+  .user .admin {
+    float: left;    
+  }
+  .user .pengguna {
+    float: right;
+    border-bottom: 5px solid white;
+}

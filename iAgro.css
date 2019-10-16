@@ -57,6 +57,29 @@ html,body{
 
 .menu ul li a:hover {
     background: forestgreen;
+
+}
+
+ul ul {
+    position: absolute;
+    width: 150px;
+    margin: 0;
+    z-index: 4;
+    padding: 20px 5px;
+    background: #fff;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background: #fff;
+}
+.menu ul li ul li a{
+    color: black;
+}
+
+ul li:hover ul {
+    display: block;
 }
 
 .menu a.button {

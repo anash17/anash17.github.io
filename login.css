@@ -26,6 +26,7 @@ h1 {
   padding-top: 40px; 
 }
 
+
 @media only screen and (max-width: 1024px) {
   .logo img {
     margin-left: 16%;
@@ -50,6 +51,8 @@ h1 {
   width: 40%;
   color: whitesmoke;
 }
+
+
 
 #welcome {
 	width: 50%;

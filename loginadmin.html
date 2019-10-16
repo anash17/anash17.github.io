@@ -4,6 +4,7 @@
 <head>
   <title>iAgro Login</title>
   <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" href="loginadmin.css">
 </head>
 
 <body>
@@ -12,12 +13,14 @@
   </div>
   
 
-  <form action="dashboard.html">
+  <form action="create.html">
     <div class="container">
       <img id="welcome" src="welcome.png" alt="" srcset="">
       <hr>
-      <a href="loginadmin" class="admin">Admin</a>
-      <a href="loginpengguna" class="pengguna">User</a>
+      <div class="user">
+          <a href="loginadmin.html" class="admin">Admin</a>
+          <a href="loginpengguna.html" class="pengguna">User</a>    
+      </div>
       <label><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required>
       <br>
