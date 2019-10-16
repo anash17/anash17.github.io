@@ -43,6 +43,7 @@
 .kanan textarea{
     position: absolute;
     height: 30%;
+    z-index: 2;
     width: 45%;
     margin:2.5%;
     font-family: sans-serif;
@@ -51,13 +52,17 @@
 .kanan button{
     position: absolute;
     width: 100px;
+    z-index: 2;
     height: 20px;
     border-radius: 3px;
     border: 0px;
     padding: 5px;
-    margin: 230px 2.5% 0 2.5%;
+    margin: 230px 2.5% 10px 2.5%;
 }
-
+.kanan button:hover{
+    background: lavender;
+    cursor: pointer;
+}
 
 
 @media (min-width:801px) and (max-width:1000px){
