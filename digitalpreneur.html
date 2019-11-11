@@ -41,13 +41,23 @@
             </div>
 
             <div class="kanan1">
-                <p>Digitalpreneur adalah pelaku bisnis di era modern saat ini yang menggunakan teknologi 
+                <p id="p1">Digitalpreneur adalah pelaku bisnis di era modern saat ini yang menggunakan teknologi 
                     informasi dan komunikasi ataupun menjalankan bisnis secara digital</p>      
-                
+                    <button onclick="printContent('p1')">Print Artikel</button>
             </div>
         </div>
     </div>
     <br><br><br><br><br><br>
     <img class="img3" src="program.png" alt="">
 </body>
+
+<script>
+    function printContent(el){
+        var halamanKembali = document.body.innerHTML;
+        var printArtikel = document.getElementById(el).innerHTML;
+        document.body.innerHTML = printArtikel;
+        window.print();
+        document.body.innerHTML = halamanKembali;
+    }
+</script>
 </html>

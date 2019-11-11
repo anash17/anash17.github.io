@@ -20,7 +20,7 @@
 
 .kanan1 p{
     position: relative;
-    z-index: 2;
+    z-index: 100;
     margin: 10% 5%;
     padding: 15px;
     background: rgba(169, 169, 169, 0.5);

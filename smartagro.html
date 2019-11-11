@@ -17,7 +17,7 @@
                 <a href="dashboard.html"><center><img src="iAgro.png" alt="iAgro"></center></a>
             </div>
 
-            <div class="menu"> 
+            <div class="menu" > 
                     <ul class="topnav">
                         <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">☰</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -41,13 +41,24 @@
             </div>
 
             <div class="kanan1">
-                <p>Smart Agro adalah merupakan sebuah visi pengembangan perkebunan untuk mengintegrasikan teknologi informasi dan komunikasi (TIK) dan teknologi Internet of things (IoT) dengan cara yang aman untuk mengelola aset perkebunan. Aset ini meliputi sistem informasi
+                <p id="p1">Smart Agro adalah merupakan sebuah visi pengembangan perkebunan untuk mengintegrasikan teknologi informasi dan komunikasi (TIK) dan teknologi Internet of things (IoT) dengan cara yang aman untuk mengelola aset perkebunan. Aset ini meliputi sistem informasi
                      sistem penunjang keptusan, pabrik pengolahan, distributor, sistem transportasi, sitem penjadwalan, pembangkit listrik, jaringan penyediaan air, pengelolaan limbah, penegakan hukum, dan pelayanan masyarakat lainnya.</p>      
-                
+                     <button onclick="printContent('p1')">Print Artikel</button>
             </div>
         </div>
     </div>
     <br><br><br><br><br><br>
     <img class="img3" src="program.png" alt="">
 </body>
+
+<script>
+    function printContent(el){
+        var halamanKembali = document.body.innerHTML;
+        var printArtikel = document.getElementById(el).innerHTML;
+        document.body.innerHTML = printArtikel;
+        window.print();
+        document.body.innerHTML = halamanKembali;
+    }
+</script>
+
 </html>
