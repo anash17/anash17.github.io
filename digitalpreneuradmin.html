@@ -8,7 +8,7 @@
     <link rel="shorcut icon" href="iAgro.png" type="image/x-icon">
     <link rel="stylesheet" href="iAgro.css">
     <link rel="stylesheet" href="program.css">
-    <script src="javascript/iAgro.js"></script>
+    <script src="iAgro.js"></script>
 </head>
 <body>
     <div class="container">
@@ -45,10 +45,27 @@
                 <p>Digitalpreneur adalah pelaku bisnis di era modern saat ini yang menggunakan teknologi 
                         informasi dan komunikasi ataupun menjalankan bisnis secara digital</p>      
                 <button>Edit</button>
+                <br>
+                <div id="wrapper">
+            <input type="file" accept="image/*" onchange="preview_image(event)">
+             <img id="output_image"/>
+            </div>  
             </div>
         </div>
     </div>
     <br><br><br><br><br><br>
     <img class="img3" src="program.png" alt="">
 </body>
+<script type='text/javascript'>
+function preview_image(event) 
+{
+ var reader = new FileReader();
+ reader.onload = function()
+ {
+  var output = document.getElementById('output_image');
+  output.src = reader.result;
+ }
+ reader.readAsDataURL(event.target.files[0]);
+}
+</script>
 </html>
