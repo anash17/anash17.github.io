@@ -8,7 +8,7 @@
     <link rel="shorcut icon" href="iAgro.png" type="image/x-icon">
     <link rel="stylesheet" href="iAgro.css">
     <link rel="stylesheet" href="dashboard.css">
-    <script src="javascript/iAgro.js"></script>
+    <script src="iAgro.js"></script>
 </head>
 <body>
     <div class="container">
@@ -29,9 +29,21 @@
                             </ul>
                         </li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a class="button" href="loginpengguna.html">Log Out</a></li>
+                        <li><a id="myBtn" class="button" >Log Out</a></li>
                     </ul>
                 </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+    <div class="modal-body">
+    <span class="close">&times;</span>
+      <p>Some text in the Modal Body</p>
+    </div>
+    <div class="modal-footer">
+      <a class="keluar" href="loginpengguna.html" >Yes</a>
+      <a class="keluar" href="dashboard.html" >No</a>
+    </div>
+  </div>
+</div>
         </div>
 
         <div class="isi">
@@ -46,5 +58,27 @@
         </div>
     </div>
     <img class="img1" src="background1.png" alt="">
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+ 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
 </body>
 </html>
