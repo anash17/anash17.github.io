@@ -8,7 +8,7 @@
     <link rel="shorcut icon" href="iAgro.png" type="image/x-icon">
     <link rel="stylesheet" href="iAgro.css">
     <link rel="stylesheet" href="program.css">
-    <script src="javascript/iAgro.js"></script>
+    <script src="iAgro.js"></script>
 </head>
 <body>
     <div class="container">
@@ -40,25 +40,28 @@
 
             </div>
 
-            <div class="kanan1">
-                <p id="p1">Smart City merupakan sebuah visi pengembangan perkotaan untuk mengintegrasikan teknologi 
-                    informasi dan komunikasi (TIK) dan teknologi Internet of things (IoT) dengan cara yang aman untuk mengelola aset kota. 
-                    Aset ini meliputi sistem informasi instansi pemerintahan lokal, sekolah, perpustakaan, sistem transportasi, rumah sakit, 
-                    pembangkit listrik, jaringan penyediaan air, pengelolaan limbah, penegakan hukum, dan pelayanan masyarakat lainnya. <br></p>      
-                <button onclick="printContent('p1')">Print Artikel</button>
+            <div class="kanan1">    
             </div>
+
+
         </div>
     </div>
     <br><br><br><br><br><br>
     <img class="img3" src="program.png" alt="">
 </body>
-<script>
-    function printContent(el){
-        var halamanKembali = document.body.innerHTML;
-        var printArtikel = document.getElementById(el).innerHTML;
-        document.body.innerHTML = printArtikel;
-        window.print();
-        document.body.innerHTML = halamanKembali;
-    }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $.getJSON("https://raw.githubusercontent.com/jcsaragih/PWeb-Kelompok-B/master/json/artikel.json",
+        function(data){
+            $.each(data, function(n,response){
+                $('.kanan1').append(
+                `<p id="p1">`+response['isi']+`<br></p>`
+
+                )
+            })
+    });
+    });
 </script>
+
 </html>
