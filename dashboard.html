@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="iAgro.css">
     <link rel="stylesheet" href="dashboard.css">
     <script src="iAgro.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -53,13 +54,14 @@
 
             <div class="kanan">
                 <h2>iAgro<br>Think Green</h2>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;iAgro, membuka Program Smart Agro dengan memanfaatkan Teknologi tinggi bagi siapapun untuk bermitra mengembangkan SmartAgro dengan ketentuan-ketentuan yang nanti akan diberikan. Kami akan memberikan pendidikan secara gratis bagi para Pelaku yang akan menjadi mitra dalam Program Smart Agro ini.</p>      
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;iAgro, membuka Program Smart Agro dengan memanfaatkan Teknologi tinggi bagi siapapun untuk bermitra mengembangkan SmartAgro dengan ketentuan-ketentuan yang nanti akan diberikan. Kami akan memberikan pendidikan secara gratis bagi para Pelaku yang akan menjadi mitra dalam Program Smart Agro ini.</p>     
+                    <div id="chartContainer" style="height: 160px; width: 50%; margin-top: 24%; margin-left: 30px; "></div>
             </div>
         </div>
     </div>
     <img class="img1" src="background1.png" alt="">
 
-    <script>
+    <script >
         var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("myBtn");
@@ -79,6 +81,29 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+var chart = new CanvasJS.Chart("chartContainer", {
+  title: {
+    text: "Grafik  Artikel terpopuler"
+  },
+  data: [
+    {
+      type: "column",
+      dataPoints: [
+        { x: 10, y: 71 },
+        { x: 20, y: 55 },
+        { x: 30, y: 50 }
+      ]
+    }                   
+  ]
+});
+chart.render();
+
+var text = document.createElement("p");
+text.innerHTML = "aaa";
+document.getElementById("chartContainer").appendChild(text);
+text.style.position = "absolute";
+text.style.top = chart.axisY[0].convertValueToPixel(65) - (text.clientHeight / 2)  + "px";
+text.style.left = chart.axisX[0].convertValueToPixel(20) - (text.clientWidth / 2 - 5) + "px";
     </script>
 </body>
 </html>
